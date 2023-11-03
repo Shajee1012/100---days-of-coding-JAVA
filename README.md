@@ -1,1 +1,1 @@
-# 100---days-of-coding-JAVA
+# 100-days-of-coding-JAVA
