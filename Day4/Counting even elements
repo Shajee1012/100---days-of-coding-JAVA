@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main {
+    public static int countEvenElements(int[] array) {
+        int count = 0;
+
+        for (int number : array) {
+           if ((number & 1) == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt();
+
+        int[] num = new int[size];
+
+        System.out.print("Enter " + size + " elements:");
+
+        for (int i = 0; i < size; i++) {
+            num[i] = sc.nextInt();
+        }
+        
+        int evenCount = countEvenElements(num);
+        System.out.println("Number of even elements: " + evenCount);
+    }
+}
